@@ -1,7 +1,52 @@
 import backgroundImage from '../assets/background.jpg';
+import binaImage from '../assets/bina.jpeg';
 import '../css/Home.css';
+import { useEffect } from 'react';
 
 function Home() {
+  useEffect(() => {
+    const indicators = document.querySelectorAll('.indicator');
+    const slides = document.querySelectorAll('.testimonial-slide');
+    let currentIndex = 0;
+    let autoAdvance;
+
+    const showSlide = (index) => {
+      slides.forEach((slide) => slide.classList.remove('active'));
+      indicators.forEach((indicator) => indicator.classList.remove('active'));
+      
+      const validIndex = index % slides.length;
+      if (slides[validIndex]) {
+        slides[validIndex].classList.add('active');
+        indicators[validIndex].classList.add('active');
+      }
+      currentIndex = validIndex;
+    };
+
+    const startAutoAdvance = () => {
+      autoAdvance = setInterval(() => {
+        showSlide(currentIndex + 1);
+      }, 5000);
+    };
+
+    indicators.forEach((indicator) => {
+      indicator.addEventListener('click', (e) => {
+        clearInterval(autoAdvance);
+        const slideIndex = parseInt(e.target.getAttribute('data-slide'));
+        showSlide(slideIndex);
+        startAutoAdvance();
+      });
+    });
+
+    startAutoAdvance();
+
+    return () => {
+      clearInterval(autoAdvance);
+      indicators.forEach((indicator) => {
+        indicator.removeEventListener('click', () => {});
+      });
+    };
+  }, []);
+
   return (
     <div className="home-container">
       {/* Hero Section */}
@@ -76,39 +121,89 @@ function Home() {
       <section className="therapist-section">
         <h2>Meet the Therapist</h2>
         <div className="therapist-content">
-          <img src="https://via.placeholder.com/300" alt="Therapist" className="therapist-image" />
+          <img src={binaImage} alt="Therapist" className="therapist-image" />
           <div className="therapist-text">
             <p>
               As a dedicated therapist, I am committed to providing compassionate and effective support to my clients. 
               I strive to build a trusting and supportive therapeutic relationship with each individual I work with.
             </p>
+            <a href="/therapist" className="read-more">Read More</a>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="contact-section">
-        <h2>Get in Touch</h2>
-        <div className="contact-info">
-          <div className="contact-item">
-            <h3>Location</h3>
-            <p>Newmarket, Ontario<br />Canada</p>
+      {/* Seeking Support Section */}
+      <section className="seeking-support-section">
+        <h2>Seeking Support</h2>
+        <p className="seeking-support-intro">
+          Seeking support is an important step towards prioritizing your mental and emotional well-being. 
+          Explore our resources to gain valuable insights into managing anxiety, building self-esteem, 
+          coping with depression, managing anger, and reducing stress.
+        </p>
+        <div className="support-circles">
+          <div className="support-circle">
+            <div className="circle-number">1</div>
+            <p className="circle-label">Anxiety</p>
           </div>
-          <div className="contact-item">
-            <h3>Email</h3>
-            <p><a href="mailto:persaudbina@gmail.com">persaudbina@gmail.com</a></p>
+          <div className="support-circle">
+            <div className="circle-number">2</div>
+            <p className="circle-label">Self-Esteem</p>
           </div>
-          <div className="contact-item">
-            <h3>Hours of Service</h3>
-            <p>Mon & Fri: 9AM - 10PM<br />Tue - Thurs: 10AM - 7PM<br />Saturday: 10AM - 7PM<br />Sunday: Closed</p>
+          <div className="support-circle">
+            <div className="circle-number">3</div>
+            <p className="circle-label">Depression</p>
           </div>
+          <div className="support-circle">
+            <div className="circle-number">4</div>
+            <p className="circle-label">Anger Management</p>
+          </div>
+          <div className="support-circle">
+            <div className="circle-number">5</div>
+            <p className="circle-label">Stress</p>
+          </div>
+        </div>
+        <div className="more-resources">
+          <a href="#" className="more-resources-link">More Resources</a>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="footer">
-        <p>&copy; 2026 Healing Meadows Counselling. All rights reserved.</p>
-      </footer>
+      {/* Testimonials Carousel Section */}
+      <section className="testimonials-section">
+        <div className="testimonials-carousel">
+          <div className="testimonial-slide active">
+            <div className="testimonial-content">
+              <p className="testimonial-text">
+                "I am incredibly grateful for the positive impact our therapy sessions have had on my life. 
+                The support and guidance I received have been invaluable in my journey towards healing and personal growth."
+              </p>
+            </div>
+            <p className="testimonial-author">Client Testimonial - Robert G. Age 47</p>
+          </div>
+          <div className="testimonial-slide">
+            <div className="testimonial-content">
+              <p className="testimonial-text">
+                "Working with this therapist has truly transformed my perspective on mental health. 
+                I feel heard, supported, and empowered to make positive changes in my life."
+              </p>
+            </div>
+            <p className="testimonial-author">Client Testimonial - Sarah M. Age 32</p>
+          </div>
+          <div className="testimonial-slide">
+            <div className="testimonial-content">
+              <p className="testimonial-text">
+                "The counseling sessions have provided me with valuable tools and strategies to manage stress and anxiety. 
+                I highly recommend this service to anyone seeking professional support."
+              </p>
+            </div>
+            <p className="testimonial-author">Client Testimonial - James T. Age 55</p>
+          </div>
+        </div>
+        <div className="carousel-indicators">
+          <button className="indicator active" data-slide="0"></button>
+          <button className="indicator" data-slide="1"></button>
+          <button className="indicator" data-slide="2"></button>
+        </div>
+      </section>
     </div>
   );
 }

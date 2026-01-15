@@ -18,6 +18,16 @@
   font-weight: 700;
 }
 
+.logo-link {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-link:hover {
+  text-decoration: none;
+}
+
+
 .nav-links {
   display: flex;
   list-style: none;

@@ -1,0 +1,102 @@
+.therapist-page {
+  padding: 0;
+}
+
+.therapist-header {
+  background-color: rgba(212, 229, 217, 0.95);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.therapist-header h1 {
+  font-size: 2.5rem;
+  color: #000;
+  margin: 0;
+  font-weight: 600;
+}
+
+.therapist-bio {
+  padding: 3rem 2rem;
+  background-color: rgba(212, 229, 217, 0.95);
+  width: 100%;
+}
+
+.bio-text {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bio-text p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.therapist-approach {
+  background-color: rgba(212, 229, 217, 0.95);
+  padding: 0;
+}
+
+.approach-wrapper {
+  display: flex;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+  padding: 3rem 2rem;
+  width: 100%;
+}
+
+.approach-text {
+  flex: 1;
+}
+
+.approach-text p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.approach-image {
+  flex: 0 0 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.therapist-circle-image {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .approach-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .approach-image {
+    flex: 1;
+    width: 100%;
+  }
+
+  .therapist-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .bio-text p {
+    text-align: left;
+  }
+
+  .therapist-circle-image {
+    width: 220px;
+    height: 220px;
+  }
+}
