@@ -7,8 +7,9 @@ function ContactInfo() {
         <div className="contact-left">
           <div className="contact-info-block">
             <p className="service-title">Servicing Residents Virtually</p>
-            <p>Ontario, Canada</p>
-            <p><a href="mailto:persaudbina@gmail.com">persaudbina@gmail.com</a></p>
+            <p>Location: Ontario, Canada</p>
+            <p>Email: <a href="mailto:persaudbina@gmail.com">persaudbina@gmail.com</a></p>
+            <p>Phone: 647-539-7269</p>
           </div>
         </div>
         <div className="contact-middle">

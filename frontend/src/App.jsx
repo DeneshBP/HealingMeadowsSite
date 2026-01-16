@@ -7,6 +7,7 @@ import ContactInfo from "./components/ContactInfo";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import TherapeuticApproach from "./pages/TherapeuticApproach";
+import Contact from "./pages/Contact";
 import Therapists from "./pages/Therapists";
 
 function App() {
@@ -15,9 +16,10 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/therapist" element={<Therapists />} />
         <Route path="/services" element={<Services />} />
         <Route path="/therapeutic-approach" element={<TherapeuticApproach />} />
-        <Route path="/therapist" element={<Therapists />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <ContactInfo />
       <Footer />

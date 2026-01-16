@@ -2,13 +2,35 @@
   padding: 0;
 }
 
+/* Therapist Page Hero Section */
+.therapist-page-hero {
+  padding: 4rem 2rem;
+  background-color: rgba(44, 95, 79, 0.85);
+  color: white;
+  text-align: center;
+}
+
+.therapist-page-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  letter-spacing: 2px;
+}
+
+.therapist-page-hero p {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
 .therapist-header {
   background-color: rgba(212, 229, 217, 0.95);
   padding: 3rem 2rem;
   text-align: center;
 }
 
-.therapist-header h1 {
+.therapist-header h2 {
   font-size: 2.5rem;
   color: #000;
   margin: 0;
@@ -16,7 +38,7 @@
 }
 
 .therapist-bio {
-  padding: 3rem 2rem;
+  padding: 1rem 2rem;
   background-color: rgba(212, 229, 217, 0.95);
   width: 100%;
 }
@@ -77,6 +99,14 @@
 }
 
 @media (max-width: 768px) {
+  .therapist-page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .therapist-page-hero p {
+    font-size: 1rem;
+  }
+
   .approach-wrapper {
     flex-direction: column;
     gap: 2rem;

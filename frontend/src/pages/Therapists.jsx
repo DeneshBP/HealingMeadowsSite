@@ -9,8 +9,12 @@ function Therapists() {
 
   return (
     <div className="therapist-page">
+      <section className="therapist-page-hero">
+        <h1>Meet the Therapist</h1>
+      </section>
+
       <section className="therapist-header">
-        <h1>Bina Persaud RP(Qualifying)</h1>
+        <h2>Bina Persaud RP(Qualifying)</h2>
       </section>
 
       <section className="therapist-bio">

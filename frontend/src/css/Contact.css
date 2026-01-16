@@ -1,0 +1,71 @@
+/* Contact Page Container */
+.contact-page-container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact Page Hero Section */
+.contact-page-hero {
+  padding: 4rem 2rem;
+  background-color: rgba(44, 95, 79, 0.85);
+  color: white;
+  text-align: center;
+}
+
+.contact-page-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  letter-spacing: 2px;
+}
+
+.contact-page-hero p {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* Contact Info Page Section */
+.contact-info-page-section {
+  padding: 4rem 2rem;
+  background-color: rgba(220, 240, 235, 0.85);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.contact-info-page-content {
+  max-width: 900px;
+  width: 100%;
+}
+
+.contact-info-page-content p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .contact-page-hero p {
+    font-size: 1rem;
+  }
+
+  .contact-info-page-section {
+    min-height: auto;
+    padding: 2rem;
+  }
+
+  .contact-info-page-content p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
