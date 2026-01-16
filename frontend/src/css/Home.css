@@ -356,6 +356,51 @@
   text-decoration: underline;
 }
 
+/* Book a Session CTA Section */
+.book-session-section {
+  padding: 4rem 2rem;
+  background-color: rgba(180, 200, 210, 0.75);
+  text-align: center;
+}
+
+.book-session-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.book-session-section h2 {
+  font-size: 2.8rem;
+  color: #000;
+  margin: 0 0 1.5rem 0;
+  font-weight: 700;
+}
+
+.book-session-section p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+.session-button {
+  display: inline-block;
+  background-color: rgba(44, 95, 79, 0.9);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(44, 95, 79, 0.9);
+}
+
+.session-button:hover {
+  background-color: transparent;
+  color: rgba(44, 95, 79, 0.9);
+  border-color: rgba(44, 95, 79, 0.9);
+}
+
 /* Responsive Design for Home */
 @media (max-width: 768px) {
   .hero-section {
@@ -394,5 +439,18 @@
 
   .contact-info {
     grid-template-columns: 1fr;
+  }
+
+  .book-session-section h2 {
+    font-size: 2rem;
+  }
+
+  .book-session-section p {
+    font-size: 1rem;
+  }
+
+  .session-button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
   }
 }

@@ -208,6 +208,15 @@ function Home() {
           <button className="indicator" data-slide="2"></button>
         </div>
       </section>
+
+      {/* Book a Session CTA Section */}
+      <section className="book-session-section">
+        <div className="book-session-content">
+          <h2>Book a Session Today</h2>
+          <p>Contact me to set up your FREE 15 minute telephone consultation</p>
+          <a href="/contact" className="session-button">Get Started</a>
+        </div>
+      </section>
     </div>
   );
 }
