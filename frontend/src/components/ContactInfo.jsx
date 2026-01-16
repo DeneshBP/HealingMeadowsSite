@@ -1,6 +1,6 @@
-import '../css/Contact.css';
+import '../css/ContactInfo.css';
 
-function Contact() {
+function ContactInfo() {
   return (
     <section id="contact" className="contact-section">
       <div className="contact-wrapper">
@@ -52,4 +52,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactInfo;

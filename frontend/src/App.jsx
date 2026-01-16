@@ -3,7 +3,7 @@ import backgroundImage from "./assets/background.jpg";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import Contact from "./components/Contact";
+import ContactInfo from "./components/ContactInfo";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import TherapeuticApproach from "./pages/TherapeuticApproach";
@@ -19,7 +19,7 @@ function App() {
         <Route path="/therapeutic-approach" element={<TherapeuticApproach />} />
         <Route path="/therapist" element={<Therapists />} />
       </Routes>
-      <Contact />
+      <ContactInfo />
       <Footer />
     </div>
   );

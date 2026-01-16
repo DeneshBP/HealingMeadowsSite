@@ -1,5 +1,5 @@
 import binaImage from "../assets/bina.jpeg";
-import "../css/Therapist.css";
+import "../css/Therapists.css";
 import { useEffect } from 'react';
 
 function Therapists() {
