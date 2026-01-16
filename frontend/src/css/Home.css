@@ -409,7 +409,7 @@
   }
 
   .hero-image {
-    min-height: 300px;
+    display: none;
   }
 
   .hero-content {
@@ -452,5 +452,40 @@
   .session-button {
     padding: 0.75rem 2rem;
     font-size: 1rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .testimonials-carousel {
+    height: 350px;
+  }
+
+  .support-circles {
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .support-circle {
+    flex: 0 0 calc(33.333% - 1rem);
+  }
+
+  .support-circles .support-circle:nth-child(4),
+  .support-circles .support-circle:nth-child(5) {
+    flex: 0 0 calc(50% - 1rem);
+  }
+
+  .circle-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .circle-label {
+    font-size: 0.85rem;
   }
 }
