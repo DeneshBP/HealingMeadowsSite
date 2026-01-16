@@ -70,7 +70,7 @@ function Home() {
               Personalized counselling sessions designed to help adults navigate life's challenges, 
               improve mental health, and achieve personal growth.
             </p>
-            <a href="#" className="read-more">Read More</a>
+            <a href="/services#individual-adults" className="read-more">Read More</a>
           </div>
 
           <div className="service-card">
@@ -79,7 +79,7 @@ function Home() {
               Specialized support for young people facing difficulties during adolescence, 
               helping them develop coping strategies and self-understanding.
             </p>
-            <a href="#" className="read-more">Read More</a>
+            <a href="/services#individual-youth" className="read-more">Read More</a>
           </div>
 
           <div className="service-card">
@@ -88,7 +88,7 @@ function Home() {
               Therapeutic sessions for couples seeking to strengthen their relationship, 
               improve communication, and resolve conflicts.
             </p>
-            <a href="#" className="read-more">Read More</a>
+            <a href="/services#couples-counselling" className="read-more">Read More</a>
           </div>
 
           <div className="service-card">
@@ -97,7 +97,7 @@ function Home() {
               Support for families working through relationship dynamics and communication challenges, 
               fostering healthier family connections.
             </p>
-            <a href="#" className="read-more">Read More</a>
+            <a href="/services#family-counselling" className="read-more">Read More</a>
           </div>
         </div>
       </section>

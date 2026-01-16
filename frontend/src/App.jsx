@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Home from "./pages/Home";
+import Services from "./pages/Services";
 import Therapists from "./pages/Therapists";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/therapist" element={<Therapists />} />
       </Routes>
       <Contact />

@@ -1,0 +1,168 @@
+/* Services Page Container */
+.services-page-container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Services Page Hero Section */
+.services-page-hero {
+  padding: 4rem 2rem;
+  background-color: rgba(44, 95, 79, 0.85);
+  color: white;
+  text-align: center;
+}
+
+.services-page-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  letter-spacing: 2px;
+}
+
+.services-page-hero p {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* Service Sections */
+.service-section {
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+}
+
+.service-content {
+  max-width: 900px;
+  width: 100%;
+}
+
+.service-content h2 {
+  font-size: 2.5rem;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.service-content p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Service Section Color Variations */
+/* Section 1: Light Green (Mint) */
+.service-section-1 {
+  background-color: rgba(220, 240, 235, 0.85);
+}
+
+/* Section 2: Light Peach/Warm Beige */
+.service-section-2 {
+  background-color: rgba(245, 235, 225, 0.85);
+}
+
+/* Section 3: Light Lavender */
+.service-section-3 {
+  background-color: rgba(240, 230, 250, 0.85);
+}
+
+/* Section 4: Light Gray-Blue */
+.service-section-4 {
+  background-color: rgba(220, 230, 240, 0.85);
+}
+
+/* Call to Action Section */
+.services-crpo {
+  padding: 4rem 2rem;
+  background-color: rgba(44, 95, 79, 0.85);
+  color: white;
+  text-align: center;
+}
+
+.services-crpo h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.services-crpo p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+.services-crpo p b {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.crpo-button {
+  display: inline-block;
+  background-color: white;
+  color: #2c5f4f;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+}
+
+.crpo-button:hover {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+/* Responsive Design for Services */
+@media (max-width: 768px) {
+  .services-page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .services-page-hero p {
+    font-size: 1rem;
+  }
+
+  .service-section {
+    min-height: auto;
+    padding: 2rem;
+  }
+
+  .service-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .service-content p {
+    font-size: 1rem;
+  }
+
+  .service-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .services-crpo h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-crpo p {
+    font-size: 1rem;
+  }
+
+  .crpo-button {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+}
