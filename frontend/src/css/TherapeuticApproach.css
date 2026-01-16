@@ -1,0 +1,76 @@
+/* Therapeutic Approach Container */
+.therapeutic-approach-container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Approach Page Hero Section */
+.approach-page-hero {
+  padding: 4rem 2rem;
+  background-color: rgba(44, 95, 79, 0.85);
+  color: white;
+  text-align: center;
+}
+
+.approach-page-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  letter-spacing: 2px;
+}
+
+.approach-page-hero p {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* Main Approach Section */
+.approach-main-section {
+  padding: 4rem 2rem;
+  background-color: rgba(245, 235, 225, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+}
+
+.approach-main-content {
+  max-width: 900px;
+  width: 100%;
+}
+
+.approach-main-content p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.approach-main-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .approach-page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .approach-page-hero p {
+    font-size: 1rem;
+  }
+
+  .approach-main-section {
+    min-height: auto;
+    padding: 2rem;
+  }
+
+  .approach-main-content p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}

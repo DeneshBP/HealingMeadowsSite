@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
+import TherapeuticApproach from "./pages/TherapeuticApproach";
 import Therapists from "./pages/Therapists";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/therapeutic-approach" element={<TherapeuticApproach />} />
         <Route path="/therapist" element={<Therapists />} />
       </Routes>
       <Contact />

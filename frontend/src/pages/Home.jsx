@@ -67,8 +67,9 @@ function Home() {
           <div className="service-card">
             <h3>Individual Counselling (Adults)</h3>
             <p>
-              Personalized counselling sessions designed to help adults navigate life's challenges, 
-              improve mental health, and achieve personal growth.
+              Welcome to our individual counselling services for adults. Sessions are tailored to 
+              support your unique needs and provide a confidential space to explore personal 
+              challenges, build self-awareness, and work toward meaningful change at your own pace.
             </p>
             <a href="/services#individual-adults" className="read-more">Read More</a>
           </div>
@@ -76,8 +77,9 @@ function Home() {
           <div className="service-card">
             <h3>Individual Counselling (Youth & Adolescents)</h3>
             <p>
-              Specialized support for young people facing difficulties during adolescence, 
-              helping them develop coping strategies and self-understanding.
+              Our individual counselling services for youth and adolescents provide a supportive 
+              and age-appropriate space to explore emotions, experiences, and challenges. Sessions 
+              are guided with care to promote understanding, resilience, and healthy development.
             </p>
             <a href="/services#individual-youth" className="read-more">Read More</a>
           </div>
@@ -85,8 +87,9 @@ function Home() {
           <div className="service-card">
             <h3>Couples Counselling</h3>
             <p>
-              Therapeutic sessions for couples seeking to strengthen their relationship, 
-              improve communication, and resolve conflicts.
+              Discover the importance of connection and communication in our couples counselling 
+              sessions. We offer a supportive and neutral space for partners to explore relationship 
+              concerns, strengthen understanding, and work collaboratively toward healthier patterns.
             </p>
             <a href="/services#couples-counselling" className="read-more">Read More</a>
           </div>
@@ -94,8 +97,9 @@ function Home() {
           <div className="service-card">
             <h3>Family Counselling</h3>
             <p>
-              Support for families working through relationship dynamics and communication challenges, 
-              fostering healthier family connections.
+              Family relationships can be complex, and our family counselling services are designed 
+              to support open communication, understanding, and growth within the family system. 
+              Sessions focus on strengthening relationships while respecting each family member’s perspective.
             </p>
             <a href="/services#family-counselling" className="read-more">Read More</a>
           </div>
@@ -113,7 +117,7 @@ function Home() {
             modalities such as Cognitive Behavioural Therapy, Mindfulness, Solution-Focused Therapy, 
             as well as emotion-focused and spiritually informed perspectives when appropriate.
           </p>
-          <a href="#" className="read-more">Read More</a>
+          <a href="/therapeutic-approach" className="read-more">Read More</a>
         </div>
       </section>
 

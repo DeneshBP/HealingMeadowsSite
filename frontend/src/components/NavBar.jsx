@@ -9,7 +9,7 @@ function NavBar() {
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/therapist">About</Link></li>
                 <li><Link to="/services">Services</Link></li>
-                <li><a href="#approach">Approach</a></li>
+                <li><Link to="/therapeutic-approach">Approach</Link></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
