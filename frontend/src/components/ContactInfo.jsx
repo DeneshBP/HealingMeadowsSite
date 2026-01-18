@@ -9,7 +9,7 @@ function ContactInfo() {
             <p className="service-title">Servicing Residents Virtually</p>
             <p>Location: Ontario, Canada</p>
             <p>Email: <a href="mailto:persaudbina@gmail.com">persaudbina@gmail.com</a></p>
-            <p>Phone: 647-539-7269</p>
+            <p>Phone: <a href="tel:+16475397269">+1 (647) 539-7269</a></p>
           </div>
         </div>
         <div className="contact-middle">
