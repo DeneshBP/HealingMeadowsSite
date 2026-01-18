@@ -215,7 +215,7 @@ function Home() {
         <div className="book-session-content">
           <h2>Book a Session Today</h2>
           <p>Contact me to set up your FREE 15 minute telephone consultation</p>
-          <Link to="/contact" className="session-button">Get Started</Link>
+          <a href="mailto:persaubina@gmail.com?subject=Consult%20Scheduling" className="session-button">Get Started</a>
         </div>
       </section>
     </div>
