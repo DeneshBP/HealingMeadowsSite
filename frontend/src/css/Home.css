@@ -242,18 +242,6 @@
   margin-top: 2rem;
 }
 
-.more-resources-link {
-  color: #2c5f4f;
-  text-decoration: underline;
-  font-size: 1.1rem;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.more-resources-link:hover {
-  color: #1d3f32;
-}
-
 /* Testimonials Section */
 .testimonials-section {
   padding: 4rem 2rem;

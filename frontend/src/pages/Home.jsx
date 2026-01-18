@@ -2,6 +2,7 @@ import backgroundImage from '../assets/background.jpg';
 import binaImage from '../assets/bina.jpeg';
 import '../css/Home.css';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Home() {
   useEffect(() => {
@@ -71,7 +72,7 @@ function Home() {
               support your unique needs and provide a confidential space to explore personal 
               challenges, build self-awareness, and work toward meaningful change at your own pace.
             </p>
-            <a href="/services#individual-adults" className="read-more">Read More</a>
+            <Link to={{pathname: "/services", hash: "#individual-adults"}} className="read-more">Read More</Link>
           </div>
 
           <div className="service-card">
@@ -81,7 +82,7 @@ function Home() {
               and age-appropriate space to explore emotions, experiences, and challenges. Sessions 
               are guided with care to promote understanding, resilience, and healthy development.
             </p>
-            <a href="/services#individual-youth" className="read-more">Read More</a>
+            <Link to={{pathname: "/services", hash: "#individual-youth"}} className="read-more">Read More</Link>
           </div>
 
           <div className="service-card">
@@ -91,7 +92,7 @@ function Home() {
               sessions. We offer a supportive and neutral space for partners to explore relationship 
               concerns, strengthen understanding, and work collaboratively toward healthier patterns.
             </p>
-            <a href="/services#couples-counselling" className="read-more">Read More</a>
+            <Link to={{pathname: "/services", hash: "#couples-counselling"}} className="read-more">Read More</Link>
           </div>
 
           <div className="service-card">
@@ -101,7 +102,7 @@ function Home() {
               to support open communication, understanding, and growth within the family system. 
               Sessions focus on strengthening relationships while respecting each family member’s perspective.
             </p>
-            <a href="/services#family-counselling" className="read-more">Read More</a>
+            <Link to={{pathname: "/services", hash: "#family-counselling"}} className="read-more">Read More</Link>
           </div>
         </div>
       </section>
@@ -117,7 +118,7 @@ function Home() {
             modalities such as Cognitive Behavioural Therapy, Mindfulness, Solution-Focused Therapy, 
             as well as emotion-focused and spiritually informed perspectives when appropriate.
           </p>
-          <a href="/therapeutic-approach" className="read-more">Read More</a>
+          <Link to="/therapeutic-approach" className="read-more">Read More</Link>
         </div>
       </section>
 
@@ -131,7 +132,7 @@ function Home() {
               As a dedicated therapist, I am committed to providing compassionate and effective support to my clients. 
               I strive to build a trusting and supportive therapeutic relationship with each individual I work with.
             </p>
-            <a href="/therapist" className="read-more">Read More</a>
+            <Link to="/therapist" className="read-more">Read More</Link>
           </div>
         </div>
       </section>
@@ -167,7 +168,7 @@ function Home() {
           </div>
         </div>
         <div className="more-resources">
-          <a href="#" className="more-resources-link">More Resources</a>
+          <Link to="/services" className="read-more">More Resources</Link>
         </div>
       </section>
 
@@ -214,7 +215,7 @@ function Home() {
         <div className="book-session-content">
           <h2>Book a Session Today</h2>
           <p>Contact me to set up your FREE 15 minute telephone consultation</p>
-          <a href="/contact" className="session-button">Get Started</a>
+          <Link to="/contact" className="session-button">Get Started</Link>
         </div>
       </section>
     </div>

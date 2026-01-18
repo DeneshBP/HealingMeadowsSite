@@ -1,16 +1,28 @@
-# React + Vite
+# 🌿 Healing Meadows
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A modern, responsive web application for Healing Meadows, built with React and Vite.
 
-Currently, two official plugins are available:
+![Project Status](https://img.shields.io/badge/status-active-2E8B57?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=flat-square&logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📖 About The Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Healing Meadows** is a website designed to provide information on wellness services. The application focuses on performance, accessibility, and a calm, nature-inspired user experience.
 
-## Expanding the ESLint configuration
+### Key Features
+* **Fast:** Powered by Vite for instant server start and hot module replacement (HMR).
+* **Responsive Design:** Optimized for mobile, tablet, and desktop views.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+* **Framework:** [React](https://reactjs.org/)
+* **Build Tool:** [Vite](https://vitejs.dev/)
+* **Deployment:** [Vercel](https://vercel.com/)
+
+---

@@ -1,6 +1,7 @@
 import '../css/Services.css';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Services() {
   const location = useLocation();
@@ -113,7 +114,7 @@ function Services() {
             and informed consent standards. Clients are provided with information about the limits of
             <b> confidentiality</b> and their rights as part of the consent process. Please note that a <b>cancellation 
             policy</b> applies for missed or late appointments. Receipts for insurance purposes can be provided upon request.</p>
-        <a href="/#contact" className="crpo-button">Contact to Book</a>
+        <Link to="/contact" className="crpo-button">Contact to Book</Link>
       </section>
     </div>
   );
