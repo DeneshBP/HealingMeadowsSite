@@ -14,7 +14,7 @@ function Therapists() {
       </section>
 
       <section className="therapist-header">
-        <h2>Bina Persaud RP(Qualifying)</h2>
+        <h2>Bina Persaud RP</h2>
       </section>
 
       <section className="therapist-bio">
